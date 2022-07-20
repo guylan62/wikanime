@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Authentification{% endblock %}
+
+{% block body %}
+    {% block main %}
+        <!-- Normal Breadcrumb Begin -->
+        <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
+            <div class="container row justify-content-center">
+                <div class="normal__breadcrumb__text">
+                        <h2>Connexion</h2>
+                        <p>Bienvenue sur Wikanime !</p>
+                </div>
+            </div>
+        </section>
+        <!-- Normal Breadcrumb End -->
+
+        <!-- Login Section Begin -->
+        <section class="login spad container row justify-content-center mx-auto">
+            <div class="login__form col-lg-6">
+                <h3>Connexion</h3>
+                {{form(loginForm)}}
+                <a href="#" class="forget_pass">Mot de passe oublié ?</a>
+            </div>
+            <div class="login__register col-lg-6">
+                <h3>Vous ne possédez pas de compte ?</h3>
+                <a href="register" class="primary-btn">Enregistrez-vous maintenant</a>
+            </div>
+        </section>
+        <!-- Login Section End -->
+    {% endblock %}
+{% endblock %}

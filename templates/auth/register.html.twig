@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    {% block main %}
+        <!-- Normal Breadcrumb Begin -->
+        <section class="normal-breadcrumb set-bg " data-setbg="img/normal-breadcrumb.jpg">
+            <div class="container row justify-content-center">
+                <div class="normal__breadcrumb__text">
+                    <h2>Inscription</h2>
+                    <p>Bienvenue sur Wikanime !</p>
+                </div>
+            </div>
+        </section>
+        <!-- Normal Breadcrumb End -->
+
+        <!-- Login Section Begin -->
+        <section class="register spad container row justify-content-center mx-auto">
+            <div class="register__form">
+                <h3>Inscription</h3>
+                {{form(registerForm)}}
+                <button type="submit" class="site-btn">s'enregistrer</button>
+            </div>
+        </section>
+        <!-- Login Section End -->
+    {% endblock %}
+{% endblock %}
